@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "184b16d0-b9f6-4821-a402-b38d1acc64ac",
+		"name": "start",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "start",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "demo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "demo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"businessKey\" : \"myBusinessKe1y\",\r\n \"withVariablesInReturn\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/engine-rest/process-definition/key/testingNew/start",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"engine-rest",
+						"process-definition",
+						"key",
+						"testingNew",
+						"start"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
